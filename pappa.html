@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cgiassa Services Finland</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header / Hero */
+    header {
+        background: url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+    }
+    header h1 { font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6); }
+    header p { font-size: 1.5rem; margin-bottom: 30px; text-shadow: 1px 1px 8px rgba(0,0,0,0.5); }
+    header .btn {
+        background-color: #1abc9c;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    header .btn:hover { background-color: #16a085; }
+
+    /* Navigation */
+    nav { background-color: #34495e; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a {
+        color: white; padding: 15px 25px; transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover { background-color: #1abc9c; border-radius: 5px; }
+
+    /* Sections */
+    section { max-width: 1100px; margin: auto; padding: 60px 20px; }
+    section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: #34495e; }
+    section p { text-align: center; font-size: 1.1rem; color: #555; }
+
+    /* About */
+    #about { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+
+    /* Services */
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+    .card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        padding: 30px 20px;
+        flex: 1 1 250px;
+        max-width: 300px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.2); }
+    .card img { width: 80px; margin-bottom: 15px; }
+    .card h3 { color: #16a085; margin-bottom: 15px; }
+
+    /* Gallery */
+    .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .gallery img {
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        transition: transform 0.3s;
+    }
+    .gallery img:hover { transform: scale(1.05); }
+
+    /* Contact */
+    #contact p { font-size: 1.1rem; margin: 10px 0; text-align: center; }
+    a.email-link { color: #16a085; transition: color 0.3s; }
+    a.email-link:hover { color: #1abc9c; }
+
+    /* Footer */
+    footer { background-color: #2c3e50; color: white; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+        header h1 { font-size: 2.5rem; }
+        header p { font-size: 1.2rem; }
+        nav { flex-direction: column; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Cgiassa Services Finland</h1>
+    <p>Yrityspalvelut Porissa – Ammattimaista palvelua kaikille</p>
+    <a href="#contact" class="btn">Ota yhteyttä</a>
+</header>
+
+<nav>
+    <a href="#about">Tietoa meistä</a>
+    <a href="#services">Palvelut</a>
+    <a href="#gallery">Galleria</a>
+    <a href="#contact">Yhteystiedot</a>
+</nav>
+
+<section id="about">
+    <h2>Tietoa meistä</h2>
+    <p><strong>Hallintopäällikkö:</strong> Timo Tervamäki</p>
+    <p><strong>Sijainti:</strong> Pori, Finland</p>
+    <p>Cgiassa Services Finland tarjoaa laadukkaita yrityspalveluja. Toimimme luotettavasti ja ammattimaisesti kaikissa projekteissamme.</p>
+</section>
+
+<section id="services">
+    <h2>Palvelut</h2>
+    <div class="services">
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Palvelu 1">
+            <h3>Palvelu 1</h3>
+            <p>Kuvaus palvelusta tai tuotteesta.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Palvelu 2">
+            <h3>Palvelu 2</h3>
+            <p>Kuvaus palvelusta tai tuotteesta.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Palvelu 3">
+            <h3>Palvelu 3</h3>
+            <p>Kuvaus palvelusta tai tuotteesta.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galleria</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x200" alt="Projektikuva 1">
+        <img src="https://via.placeholder.com/300x200" alt="Projektikuva 2">
+        <img src="https://via.placeholder.com/300x200" alt="Projektikuva 3">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Yhteystiedot</h2>
+    <p><strong>Sähköposti:</strong> <a class="email-link" href="mailto:cgiassa@hotmail.com">cgiassa@hotmail.com</a></p>
+    <p><strong>Asiakaspalvelu:</strong> <a class="email-link" href="mailto:asiakaspalvelu.cgiassa@hotmail.com">asiakaspalvelu.cgiassa@hotmail.com</a></p>
+    <p><strong>Oppimiskeskus:</strong> <a class="email-link" href="mailto:timo.cgiassa@hotmail.com">timo.cgiassa@hotmail.com</a></p>
+</section>
+
+<footer>
+    &copy; 2025 Cgiassa Services Finland
+</footer>
+
+</body>
+</html>
